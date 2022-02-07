@@ -1,0 +1,26 @@
+<%- include ('partials/header'); -%>
+
+<div class="ui main text container segment">
+    <form action="/login" class="ui large form" method="POST">
+        <div class="ui stacked secondary segment">
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    <input autofocus type="username" name="username" placeholder="Username" required>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="two fields">
+                <button type="submit" class="ui left floated fluid large teal button">Login</button>
+                <a class="ui right floated fluid large grey button" href="/register">Register</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<%- include ('partials/footer'); -%>
